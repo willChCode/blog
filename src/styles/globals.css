@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1000&italic&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-link {
+  @apply focus:bg-blue-500 focus:text-white dark:text-white;
+}
+.title {
+  background: linear-gradient(45deg, #0099ff, #66ccff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1000;
+}
+p {
+  @apply dark:text-[#EEEEEE];
+}
+
+.nav2 {
+  display: none;
+  padding: 32px;
+  position: fixed;
+  left: 0px;
+  top: 85px;
+  width: 250px;
+}
+
+.nav-button ~ input:checked ~ .nav2 {
+  height: 100%;
+  display: block;
+}

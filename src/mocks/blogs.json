@@ -1,0 +1,79 @@
+{
+  "blogs": {
+    "articles": [
+      {
+        "titulo": "Creating my own website with NextJS, Tailwind, MDX and Vercel",
+        "fecha": "January 30, 2021",
+        "tecnologias": [
+          "NextJS",
+          "TailwindCSS",
+          "DaisyUI",
+          "TypeScript",
+          "Vercel"
+        ],
+        "descripcion": "I am going to show you how I created the website you are watching right now and why I decided to pick each piece of the tech stack."
+      },
+      {
+        "titulo": "Login Auth Complete with firebase",
+        "fecha": "January 30, 2021",
+        "tecnologias": ["React", "firebase", "react-hook-forms"],
+        "descripcion": "In this article, I will show you my journey creating a RPG framework for Unreal Engine 4, composed of 4 modular systems that help developers speed up the creation of their dream RPG game."
+      },
+      {
+        "titulo": "Api Rest Ecommerce",
+        "fecha": "January 30, 2021",
+        "tecnologias": [
+          "NodeJS",
+          "Express",
+          "MongoDB",
+          "ZOD",
+          "JWT",
+          "Cookies"
+        ],
+        "descripcion": "Learn how to create a rich featured and dependency free authorization system for your NodeJS backend using Express."
+      },
+      {
+        "titulo": "How to PRISMA in the backend with nodeJS",
+        "fecha": "April 12, 2023",
+        "tecnologias": ["NodeJS", "Express", "Prisma", "SqlLite"],
+        "descripcion": "Discover how to properly store your JWT in the browser to avoid security holes in your app."
+      },
+      {
+        "titulo": "How to GraphQL in the backend with nodeJS",
+        "fecha": "April 30, 2023",
+        "tecnologias": ["NodeJS", "Express", "GraphQl", "MongoDB"],
+        "descripcion": "Discover how to properly store your JWT in the browser to avoid security holes in your app."
+      }
+    ],
+    "projects": [
+      {
+        "titulo": "ToDo App",
+        "descripcion": "Website de tareas hecho con MERN Stack"
+      },
+      {
+        "titulo": "Will Blogs",
+        "descripcion": "My personal website showcasing my projects and blog posts. Built using NextJS, ChakraUI, MDX, and hosted on Vercel."
+      },
+      {
+        "titulo": "CRUD Videos",
+        "descripcion": "Website para cargar, elimnar, actualizar  y editar videos"
+      },
+      {
+        "titulo": "Ecommerce",
+        "descripcion": "Creating Ecommerce products for your products"
+      },
+      {
+        "titulo": "TikTok Clone",
+        "descripcion": "clonando una de las grandes platafromas de videos cortos en internet"
+      },
+      {
+        "titulo": "Landing Page",
+        "descripcion": "Website landing page loading content"
+      },
+      {
+        "titulo": "News",
+        "descripcion": "Website para ver noticias nuevas"
+      }
+    ]
+  }
+}
