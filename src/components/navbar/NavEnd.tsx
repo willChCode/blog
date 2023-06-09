@@ -1,7 +1,13 @@
 'use client';
 
+import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { BsSunFill, BsFillMoonFill } from 'react-icons/bs';
+import { TbWorld } from 'react-icons/tb';
+import LinkINTL from 'next-intl/link';
+import { useI18n } from '@/context/i18nContext';
+import { usePathname } from 'next/navigation';
 
 function NavEnd() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -11,16 +17,47 @@ function NavEnd() {
     setDarkMode(!darkMode);
   };
 
+  const { locale } = useI18n();
+  const pathName = usePathname();
+  // const { asPath, route, pathname } = router.
+  console.log(locale);
+  console.log(pathName);
+  // console.log(pathName);
+  // const regex = /^\/\w{2}(?=\/)/;
+  // const lastPath = pathName.replace(regex, '');
+
   return (
     <div className='navbar-end'>
       <span onClick={handleChange} className='btn btn-ghost btn-circle'>
         {darkMode ? <BsFillMoonFill size={20} /> : <BsSunFill size={20} />}
       </span>
-      {/* <button
-        className='px-4 py-2 rounded bg-blue-500 text-white'
-        onClick={handleToggleDarkMode}>
-        {darkMode ? 'Modo Claro' : 'Modo Oscuro'}
-      </button> */}
+      <div className='dropdown dropdown-end'>
+        <label tabIndex={0} className='btn btn-ghost btn-circle'>
+          <TbWorld size={24} />
+        </label>
+        <ul
+          tabIndex={0}
+          className='dropdown-content menu p-2 shadow bg-base-100 rounded-box w-[11rem] mt-1 dark:bg-[#1A202C]'>
+          <li>
+            <LinkINTL
+              href={'/'}
+              locale='en'
+              className={`${locale === 'en' ? 'active disabled' : ''}`}>
+              <Image alt='en' src='/flags/us.svg' width={35} height={20} />
+              Ingles
+            </LinkINTL>
+          </li>
+          <li>
+            <LinkINTL
+              href={'/'}
+              locale='es'
+              className={`${locale === 'es' ? 'active disabled' : ''}`}>
+              <Image alt='es' src='/flags/es.svg' width={35} height={20} />
+              Español
+            </LinkINTL>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

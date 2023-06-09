@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import Container from '@/components/Container';
 import Title from '@/components/Title';

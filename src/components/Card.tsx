@@ -29,7 +29,7 @@ function Card({
       p-3 flex flex-col gap-3
       ${bordered && 'border-[1px]'}
       ${shadow && 'shadow-lg'}
-      ${small ? 'w-80' : 'w-full'}`}>
+      ${small ? 'w-80 max-sm:w-full' : 'w-full'}`}>
       {title}
       {line && <hr className='border-gray-300' />}
       {fecha && (

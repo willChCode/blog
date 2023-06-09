@@ -5,9 +5,9 @@ import { SiGmail } from 'react-icons/si';
 
 function Footer() {
   return (
-    <div className='flex py-[2rem] px-4 justify-center items-center gap-5 dark:text-white'>
+    <div className='flex py-[2rem] px-4 justify-center items-center gap-5 dark:text-white max-sm:flex max-sm:flex-col'>
       <h2>© 2023 willCh - Dev </h2>
-      <span className='flex gap-3'>
+      <span className='flex gap-3 flex-wrap'>
         <BsTwitter size={30} color='#1DA1F2' />
         <AiFillGithub
           size={30}

@@ -1,0 +1,30 @@
+{
+  "Index": {
+    "presentation": {
+      "saludo": "Hi, Im, {name}",
+      "pstGreet": "Hi, I&apos;m",
+      "pstName": " Wilder Chambi"
+    },
+    "navBar": {
+      "navHome": "Home",
+      "navProject": "Projects",
+      "navBlog": "Blog",
+      "navProfile": "Profile"
+    },
+    "resume": {
+      "bodySchoolT": "This years I coursed my degree in Computer Sciene. I acquired a great fundamental knowledge about computers and programming. I took several types of subjects, going from AI to Cloud in my last year.",
+      "bodyFullStackT": "This years I coursed my degree in Computer Sciene. I acquired a great fundamental knowledge about computers and programming. I took several types of subjects, going from AI to Cloud in my last year.",
+      "aboutT": "I consider myself a very curious person and a good learner. I am always investigating about new technologies, tools and ways to do things better. I am good at working in a team environment, always exchaning ideas about how to approach problems and solve them efficiently.",
+      "languagesENT": "English: Basic",
+      "languagesEST": "Spanish: Native",
+      "title": {
+        "profileT": "Profile",
+        "aboutT": "About",
+        "technologyT": "Technology",
+        "educationT": "Education",
+        "experienceT": "Experience",
+        "languagesT": "languages"
+      }
+    }
+  }
+}

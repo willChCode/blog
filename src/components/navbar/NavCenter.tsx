@@ -1,29 +1,31 @@
-'use client';
 import Link from 'next/link';
-import React from 'react';
+// import React from 'react';
+import { useTranslations } from 'next-intl';
 
 function NavCenter() {
+  const t = useTranslations('Index.navBar');
+
   return (
     <div className='navbar-center hidden md:flex '>
       <ul className='menu menu-horizontal text-[#1A202C]'>
         <li>
           <Link className='menu-link' href='/'>
-            Home
+            {t('navHome')}
           </Link>
         </li>
         <li>
           <Link className='menu-link' href='/projects'>
-            Projects
+            {t('navProject')}
           </Link>
         </li>
         <li>
           <Link className='menu-link' href='/blogs'>
-            Blog
+            {t('navBlog')}
           </Link>
         </li>
         <li>
           <Link className='menu-link' href='/resume'>
-            Profile
+            {t('navProfile')}
           </Link>
         </li>
       </ul>

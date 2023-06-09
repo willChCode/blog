@@ -1,35 +1,38 @@
+import React from 'react';
 import Card from '@/components/Card';
 import Container from '@/components/Container';
 import Icon from '@/components/Icon';
 import Label from '@/components/Label';
 import Title from '@/components/Title';
-import React from 'react';
 import { AiOutlineUser } from 'react-icons/ai';
 import { HiCode } from 'react-icons/hi';
+import { useTranslations } from 'next-intl';
 
-function resumePage() {
+function Resume() {
+  const t = useTranslations('Index.resume');
+
   const bodyFrontend = (
     <div className='flex flex-wrap gap-4'>
-      <Icon src='javascript.svg' alt='next13' />
-      <Icon src='react.svg' alt='next13' />
-      <Icon src='redux.svg' alt='next13' />
-      <Icon src='next2.svg' alt='next13' />
-      <Icon src='html.svg' alt='next13' />
-      <Icon src='css.svg' alt='next13' />
-      <Icon src='tailwind.svg' alt='next13' />
+      <Icon src='/iconFront/javascript.svg' alt='next13' />
+      <Icon src='/iconFront/react.svg' alt='next13' />
+      <Icon src='/iconFront/redux.svg' alt='next13' />
+      <Icon src='/iconFront/next2.svg' alt='next13' />
+      <Icon src='/iconFront/html.svg' alt='next13' />
+      <Icon src='/iconFront/css.svg' alt='next13' />
+      <Icon src='/iconFront/tailwind.svg' alt='next13' />
     </div>
   );
 
   const bodyBackend = (
     <div className='flex flex-wrap gap-4 p-[3px]'>
-      <Icon src='/backend/node.svg' alt='node' />
-      <Icon src='/backend/typescript.svg' alt='typescript' />
-      <Icon src='/backend/jest.svg' alt='jest' />
-      <Icon src='/backend/heroku.svg' alt='heroku' />
-      <Icon src='/backend/prisma.svg' alt='prisma' />
-      <Icon src='/backend/sql.svg' alt='sql' />
-      <Icon src='/backend/mongo.svg' alt='mongo' />
-      <Icon src='/backend/firebase.svg' alt='firebase' />
+      <Icon src='/iconBack/node.svg' alt='node' />
+      <Icon src='/iconBack/typescript.svg' alt='typescript' />
+      <Icon src='/iconBack/jest.svg' alt='jest' />
+      <Icon src='/iconBack/heroku.svg' alt='heroku' />
+      <Icon src='/iconBack/prisma.svg' alt='prisma' />
+      <Icon src='/iconBack/sql.svg' alt='sql' />
+      <Icon src='/iconBack/mongo.svg' alt='mongo' />
+      <Icon src='/iconBack/firebase.svg' alt='firebase' />
     </div>
   );
 
@@ -42,23 +45,11 @@ function resumePage() {
     </div>
   );
 
-  const bodySchool = (
-    <p className='text-justify'>
-      This years I coursed my degree in Computer Sciene. I acquired a great
-      fundamental knowledge about computers and programming. I took several
-      types of subjects, going from AI to Cloud in my last year.
-    </p>
-  );
-  const bodyFullStack = (
-    <p className='text-justify'>
-      This years I coursed my degree in Computer Sciene. I acquired a great
-      fundamental knowledge about computers and programming. I took several
-      types of subjects, going from AI to Cloud in my last year.
-    </p>
-  );
+  const bodySchool = <p className='text-justify'>{t('bodySchoolT')}</p>;
+  const bodyFullStack = <p className='text-justify'>{t('bodyFullStackT')}</p>;
 
   const etiquetas = (
-    <span className='flex gap-3'>
+    <span className='flex gap-3 flex-wrap'>
       <Label title='ReactJS' bgColor='bg-green-300' />
       <Label title='MongoDB' bgColor='bg-red-300' />
       <Label title='NodeJS' bgColor='bg-gray-300' />
@@ -69,16 +60,10 @@ function resumePage() {
   return (
     <Container>
       <div className='flex flex-col gap-7 my-7 dark:text-white'>
-        <Title title='Resume' textCenter textBig />
+        <Title title={t('title.profileT')} textCenter textBig />
         <section className='flex flex-col gap-5'>
-          <Title title='About' icon={AiOutlineUser} />
-          <p className='text-justify'>
-            I consider myself a very curious person and a good learner. I am
-            always investigating about new technologies, tools and ways to do
-            things better. I am good at working in a team environment, always
-            exchaning ideas about how to approach problems and solve them
-            efficiently.
-          </p>
+          <Title title={t('title.aboutT')} icon={AiOutlineUser} />
+          <p className='text-justify'>{t('aboutT')}</p>
         </section>
         <section className='flex flex-col gap-5'>
           <Title title='Skills' icon={HiCode} />
@@ -95,14 +80,14 @@ function resumePage() {
             line
           />
           <Card
-            title={<Title title='Technology' />}
+            title={<Title title={t('title.technologyT')} />}
             body={bodytechnology}
             bordered
             line
           />
         </section>
         <section className='flex flex-col gap-5'>
-          <Title title='Education' textBig />
+          <Title title={t('title.educationT')} textBig />
           <Card
             title={<Title title='Systems Engineering' />}
             fecha='Jan 2016 - jul 2021'
@@ -111,7 +96,7 @@ function resumePage() {
           />
         </section>
         <section className='flex flex-col gap-5'>
-          <Title title='Experience' textBig />
+          <Title title={t('title.experienceT')} textBig />
           <Card
             title={<Title title='FullStack Bootcamp' />}
             fecha='Sep 2020 - Mar 2021'
@@ -128,10 +113,10 @@ function resumePage() {
           />
         </section>
         <section className='flex flex-col gap-5'>
-          <Title title='Languages' textBig />
-          <span className='flex gap-3'>
-            <p className='btn btn-outline '>English: Basic</p>
-            <p className='btn btn-outline '>Spanish: Native</p>
+          <Title title={t('title.languagesT')} textBig />
+          <span className='flex gap-3 flex-wrap'>
+            <p className='btn btn-outline '>{t('languagesENT')}</p>
+            <p className='btn btn-outline '>{t('languagesEST')}</p>
           </span>
         </section>
       </div>
@@ -139,4 +124,4 @@ function resumePage() {
   );
 }
 
-export default resumePage;
+export default Resume;

@@ -1,8 +1,12 @@
 import React from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { BsLinkedin } from 'react-icons/bs';
+import { useTranslations } from 'next-intl';
 
 function Presentation() {
+  const t = useTranslations('Index.presentation');
+
+  const p = () => <>I&apos;m</>;
   return (
     <div
       className='
@@ -10,17 +14,30 @@ function Presentation() {
       {/* <h1 className='font-bold text-6xl title text-center'>
         Hi, I&apos;m Wilder Chambi
       </h1> */}
-      <span className='flex  items-center text-4xl gap-2 dark:text-white'>
-        Hi, I&apos;m
-        <h1 className='font-bold title'>Wilder Chambi</h1>
+      <span className='lg:flex text-center text-5xl dark:text-white'>
+        <p
+          className='mr-4'
+          dangerouslySetInnerHTML={{ __html: t.raw('pstGreet') }}
+        />
+        {/* Hi, I&apos;m */}
+        {/* {t.title} */}
+        <h1 className='font-bold title'>{t('pstName')}</h1>
       </span>
       <p className='text-xl dark:text-white'>FullStack Web</p>
       <span className='flex gap-4 justify-center items-center [&>a]:dark:text-white'>
-        <a href='#' className='btn btn-outline flex gap-2 items-center '>
+        <a
+          href='https://www.linkedin.com/in/wilder-chambi-592810272/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='btn btn-outline flex gap-2 items-center '>
           <BsLinkedin size={17} />
           Linkedin
         </a>
-        <a href='#' className='btn btn-outline flex gap-2 items-center'>
+        <a
+          href='https://github.com/willChCode'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='btn btn-outline flex gap-2 items-center'>
           <AiFillGithub size={20} />
           Github
         </a>

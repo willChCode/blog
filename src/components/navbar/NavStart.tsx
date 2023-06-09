@@ -1,9 +1,17 @@
+'use client';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { IoLogoOctocat } from 'react-icons/io';
 import { RiMenu4Line } from 'react-icons/ri';
 
-function NavStart() {
+interface NavStartProps {
+  home: String;
+  project: String;
+  blog: String;
+  profile: String;
+}
+
+function NavStart({ home, project, blog, profile }: NavStartProps) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const closeMenu = () => {
@@ -28,22 +36,22 @@ function NavStart() {
           <ul className='menu menu-vertical text-[#1A202C] dark:text-white '>
             <li>
               <Link className='menu-link' href='/' onClick={closeMenu}>
-                Home
+                {home}
               </Link>
             </li>
             <li>
               <Link className='menu-link' href='/projects' onClick={closeMenu}>
-                Projects
+                {project}
               </Link>
             </li>
             <li>
               <Link className='menu-link' href='/blogs' onClick={closeMenu}>
-                Blog
+                {blog}
               </Link>
             </li>
             <li>
               <Link className='menu-link' href='/resume' onClick={closeMenu}>
-                Profile
+                {profile}
               </Link>
             </li>
           </ul>

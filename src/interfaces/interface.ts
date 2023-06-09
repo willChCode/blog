@@ -2,6 +2,9 @@ import { IconType } from 'react-icons';
 
 export interface ChildrenProps {
   children: React.ReactNode | React.ReactNode[];
+  params?: {
+    locale: string | undefined;
+  };
 }
 
 export interface TitleProps {

@@ -1,0 +1,79 @@
+{
+  "blogs": {
+    "articles": [
+      {
+        "titulo": "Creando mi propio sitio web con NextJS, Tailwind, MDX y Vercel",
+        "fecha": "30 de enero de 2021",
+        "tecnologias": [
+          "NextJS",
+          "TailwindCSS",
+          "DaisyUI",
+          "TypeScript",
+          "Vercel"
+        ],
+        "descripcion": "Te mostraré cómo creé el sitio web que estás viendo en este momento y por qué decidí elegir cada parte de la pila tecnológica."
+      },
+      {
+        "titulo": "Autenticación completa de inicio de sesión con Firebase",
+        "fecha": "30 de enero de 2021",
+        "tecnologias": ["React", "Firebase", "React Hook Forms"],
+        "descripcion": "En este artículo, te mostraré mi experiencia creando un framework de RPG para Unreal Engine 4, compuesto por 4 sistemas modulares que ayudan a los desarrolladores a acelerar la creación de su juego de rol soñado."
+      },
+      {
+        "titulo": "API Rest para Ecommerce",
+        "fecha": "30 de enero de 2021",
+        "tecnologias": [
+          "NodeJS",
+          "Express",
+          "MongoDB",
+          "ZOD",
+          "JWT",
+          "Cookies"
+        ],
+        "descripcion": "Aprende cómo crear un sistema de autorización completo y sin dependencias para tu backend de NodeJS utilizando Express."
+      },
+      {
+        "titulo": "Cómo utilizar PRISMA en el backend con NodeJS",
+        "fecha": "12 de abril de 2023",
+        "tecnologias": ["NodeJS", "Express", "Prisma", "SqlLite"],
+        "descripcion": "Descubre cómo almacenar correctamente tu JWT en el navegador para evitar agujeros de seguridad en tu aplicación."
+      },
+      {
+        "titulo": "Cómo utilizar GraphQL en el backend con NodeJS",
+        "fecha": "30 de abril de 2023",
+        "tecnologias": ["NodeJS", "Express", "GraphQL", "MongoDB"],
+        "descripcion": "Descubre cómo almacenar correctamente tu JWT en el navegador para evitar agujeros de seguridad en tu aplicación."
+      }
+    ],
+    "projects": [
+      {
+        "titulo": "Aplicación de Tareas",
+        "descripcion": "Sitio web de tareas realizado con MERN Stack"
+      },
+      {
+        "titulo": "Will Blogs",
+        "descripcion": "Mi sitio web personal que muestra mis proyectos y publicaciones de blog. Construido con NextJS, ChakraUI, MDX y alojado en Vercel."
+      },
+      {
+        "titulo": "CRUD de Videos",
+        "descripcion": "Sitio web para cargar, eliminar, actualizar y editar videos"
+      },
+      {
+        "titulo": "Ecommerce",
+        "descripcion": "Creando productos de comercio electrónico para tus productos"
+      },
+      {
+        "titulo": "Clon de TikTok",
+        "descripcion": "Clonando una de las grandes plataformas de videos cortos en Internet"
+      },
+      {
+        "titulo": "Página de Aterrizaje",
+        "descripcion": "Página de inicio del sitio web cargando contenido"
+      },
+      {
+        "titulo": "Noticias",
+        "descripcion": "Sitio web para ver noticias nuevas"
+      }
+    ]
+  }
+}

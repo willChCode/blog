@@ -1,0 +1,30 @@
+{
+  "Index": {
+    "presentation": {
+      "saludo": "Hi, Im, {name}",
+      "pstGreet": "Hola, Soy",
+      "pstName": " Wilder Chambi"
+    },
+    "navBar": {
+      "navHome": "Inicio",
+      "navProject": "Projectos",
+      "navBlog": "Blog",
+      "navProfile": "Perfil"
+    },
+    "resume": {
+      "bodySchoolT": "Este año cursé mi carrera en Ciencias de la Computación. Adquirí un gran conocimiento fundamental sobre computadoras y programación. Tomé varios tipos de asignaturas, desde IA hasta Cloud en mi último año.",
+      "bodyFullStackT": "Este año cursé mi carrera en Ciencias de la Computación. Adquirí un gran conocimiento fundamental sobre computadoras y programación. Tomé varios tipos de asignaturas, desde IA hasta Cloud en mi último año.",
+      "aboutT": "Me considero una persona muy curiosa y buena aprendiendo. Siempre investigo sobre nuevas tecnologías, herramientas y formas de hacer las cosas mejor. Soy bueno trabajando en equipo, siempre intercambiando ideas sobre cómo abordar problemas y resolverlos eficientemente.",
+      "languagesENT": "Inglés: Básico",
+      "languagesEST": "Español: Nativo",
+      "title": {
+        "profileT": "Perfil",
+        "aboutT": "Acerca de",
+        "technologyT": "Tenologias",
+        "educationT": "Educacion",
+        "experienceT": "Experiencia",
+        "languagesT": "lenguajes"
+      }
+    }
+  }
+}

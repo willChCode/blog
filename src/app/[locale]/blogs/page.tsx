@@ -2,6 +2,7 @@ import Container from '@/components/Container';
 import Title from '@/components/Title';
 import LoadBlogs from './LoadBlogs';
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 function blogsPage() {
   return (
