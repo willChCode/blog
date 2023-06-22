@@ -1,6 +1,5 @@
 import Container from '@/components/Container';
 import Pepe from '@/components/Pepe';
-import React from 'react';
 
 function loading() {
   return (

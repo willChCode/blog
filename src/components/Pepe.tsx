@@ -13,7 +13,7 @@ function Pepe() {
       loop
       controls={true}
       src='/gifs/rana-pepe.json'
-      style={{ height: '50px', width: '50px' }}
+      style={{ height: '100px', width: '100px' }}
     />
   );
 }
