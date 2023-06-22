@@ -186,17 +186,32 @@
       {
         "titulo": "TikTok Clone",
         "descripcion": "clonando una de las grandes platafromas de videos cortos en internet",
-        "src": "https://carrito-xi.vercel.app/"
+        "src": "https://github.com/willChCode/tiktok-clone"
       },
       {
-        "titulo": "Landing Page",
-        "descripcion": "Website landing page loading content",
-        "src": "https://carrito-xi.vercel.app/"
+        "titulo": "Backend Ecommerce",
+        "descripcion": "apirest ecommerce con Nodejs, JWT, ZOD, Express, MongoDB",
+        "src": "https://github.com/willChCode/api_ecommerce"
       },
       {
-        "titulo": "News",
-        "descripcion": "Website para ver noticias nuevas",
-        "src": "https://carrito-xi.vercel.app/"
+        "titulo": "Ecommerce - NEXTJS",
+        "descripcion": "Ecommerce with Shopping Cart, Product Filters, Product Ordering, and Login",
+        "src": "https://github.com/willChCode/ecommerceNEXT"
+      },
+      {
+        "titulo": "OTP - CAPTCHA",
+        "descripcion": "OTP, Verification Code, CAPTCHA Integration, Firebase, ReactJS",
+        "src": "https://github.com/willChCode/phone-otp"
+      },
+      {
+        "titulo": "turboRepo - appVideos",
+        "descripcion": "appVideos with TurboRepo, MongoDB, Express, NodeJS, ReactJS, Typescript",
+        "src": "https://github.com/willChCode/TURBOREPO-appVideos"
+      },
+      {
+        "titulo": "newsApp",
+        "descripcion": "newsApp with Nextjs v13, TailwindCSS, daisyUI, Axios, ApiNews",
+        "src": "https://github.com/willChCode/newsApp"
       }
     ]
   }
