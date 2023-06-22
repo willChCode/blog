@@ -6,6 +6,7 @@ import Footer from './footer';
 import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { I18nProvider } from '@/context/i18nContext';
+import { ArticlesProvider } from '@/context/articlesContext';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -29,11 +30,13 @@ export default function RootLayout({ children, params }: ChildrenProps) {
         className={`${montserrat.className} dark:bg-[#1A202C]`}
         suppressHydrationWarning={true}>
         <I18nProvider locale={locale}>
-          <header>
-            <NavBar />
-          </header>
-          <main>{children}</main>
-          <Footer />
+          <ArticlesProvider>
+            <header>
+              <NavBar />
+            </header>
+            <main>{children}</main>
+            <Footer />
+          </ArticlesProvider>
         </I18nProvider>
       </body>
     </html>

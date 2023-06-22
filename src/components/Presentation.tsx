@@ -6,14 +6,10 @@ import { useTranslations } from 'next-intl';
 function Presentation() {
   const t = useTranslations('Index.presentation');
 
-  const p = () => <>I&apos;m</>;
   return (
     <div
       className='
       w-full h-[50vh] flex justify-center items-center flex-col gap-2'>
-      {/* <h1 className='font-bold text-6xl title text-center'>
-        Hi, I&apos;m Wilder Chambi
-      </h1> */}
       <span className='lg:flex text-center text-5xl dark:text-white'>
         <p
           className='mr-4'

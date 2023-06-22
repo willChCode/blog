@@ -87,7 +87,7 @@ function Resume() {
           />
         </section>
         <section className='flex flex-col gap-5'>
-          <Title title={t('title.educationT')} textBig />
+          <Title title={t('title.educationT')} />
           <Card
             title={<Title title='Systems Engineering' />}
             fecha='Jan 2016 - jul 2021'
@@ -96,7 +96,7 @@ function Resume() {
           />
         </section>
         <section className='flex flex-col gap-5'>
-          <Title title={t('title.experienceT')} textBig />
+          <Title title={t('title.experienceT')} />
           <Card
             title={<Title title='FullStack Bootcamp' />}
             fecha='Sep 2020 - Mar 2021'
@@ -113,7 +113,7 @@ function Resume() {
           />
         </section>
         <section className='flex flex-col gap-5'>
-          <Title title={t('title.languagesT')} textBig />
+          <Title title={t('title.languagesT')} />
           <span className='flex gap-3 flex-wrap'>
             <p className='btn btn-outline '>{t('languagesENT')}</p>
             <p className='btn btn-outline '>{t('languagesEST')}</p>

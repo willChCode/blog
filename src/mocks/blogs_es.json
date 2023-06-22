@@ -2,6 +2,7 @@
   "blogs": {
     "articles": [
       {
+        "id": "1",
         "titulo": "Creando mi propio sitio web con NextJS, Tailwind, MDX y Vercel",
         "fecha": "30 de enero de 2021",
         "tecnologias": [
@@ -11,15 +12,42 @@
           "TypeScript",
           "Vercel"
         ],
-        "descripcion": "Te mostraré cómo creé el sitio web que estás viendo en este momento y por qué decidí elegir cada parte de la pila tecnológica."
+        "descripcion": "Te mostraré cómo creé el sitio web que estás viendo en este momento y por qué decidí elegir cada parte de la pila tecnológica.",
+        "content": {
+          "code": "// Dependencies \nnpx create-next-app@latest \nnpm install -D tailwindcss postcss autoprefixer \nnpx tailwindcss init -p",
+          "resume": "En este artículo, te contaré mi experiencia al crear mi propio sitio web utilizando NextJS, TailwindCSS, MDX y Vercel. Exploraré las razones detrás de cada elección tecnológica y compartiré algunos consejos y trucos que aprendí en el proceso.",
+          "src": "/articles/image.png",
+
+          "title1": "Elegir NextJS como framework",
+          "desc1": "NextJS es un framework de React que ofrece muchas características poderosas, como el renderizado del lado del servidor (SSR) y el renderizado estático (SSG). Explicaré por qué decidí utilizar NextJS y cómo aproveché estas capacidades para mejorar el rendimiento y la experiencia del usuario de mi sitio web.",
+
+          "title2": "Usar TailwindCSS y DaisyUI para el diseño",
+          "desc2": "Hablare de mi elección de utilizar TailwindCSS como mi framework de estilos y cómo DaisyUI, una extensión de TailwindCSS, me ayudó a acelerar el proceso de diseño. Discutiré los beneficios de utilizar un sistema de diseño basado en clases y compartiré ejemplos de cómo personalicé el diseño de mi sitio web.",
+
+          "title3": "Integración con Vercel para implementación y alojamiento",
+          "desc3": "Vercel es una plataforma de implementación y alojamiento que simplifica el proceso de lanzamiento de aplicaciones web. Compartiré cómo configuré Vercel para mi sitio web, incluida la configuración de implementaciones automáticas y la personalización del dominio. También mencionaré algunas características adicionales de Vercel que encontré útiles durante el desarrollo de mi sitio web."
+        }
       },
       {
+        "id": "2",
         "titulo": "Autenticación completa de inicio de sesión con Firebase",
         "fecha": "30 de enero de 2021",
         "tecnologias": ["React", "Firebase", "React Hook Forms"],
-        "descripcion": "En este artículo, te mostraré mi experiencia creando un framework de RPG para Unreal Engine 4, compuesto por 4 sistemas modulares que ayudan a los desarrolladores a acelerar la creación de su juego de rol soñado."
+        "descripcion": "En este artículo, te mostraré mi experiencia creando un framework de RPG para Unreal Engine 4, compuesto por 4 sistemas modulares que ayudan a los desarrolladores a acelerar la creación de su juego de rol soñado.",
+        "content": {
+          "code": "// Dependencies\nnpm install firebase react-hook-form",
+          "resume": "La autenticación de inicio de sesión es un componente clave en muchas aplicaciones web modernas. En este artículo, te guiaré paso a paso a través del proceso de implementación de una autenticación completa de inicio de sesión utilizando Firebase, una plataforma de desarrollo de aplicaciones en la nube. Además, utilizaremos React como biblioteca de interfaz de usuario y React Hook Forms para gestionar los formularios de inicio de sesión de manera sencilla y eficiente.",
+          "src": "/articles/login.png",
+          "title1": "Introducción a Firebase",
+          "desc1": "Comenzaremos con una introducción a Firebase y sus características relacionadas con la autenticación. Exploraremos cómo Firebase simplifica la gestión de usuarios, proporciona funciones de seguridad robustas y ofrece integraciones fáciles de usar con diferentes proveedores de inicio de sesión, como Google, Facebook y Twitter.",
+          "title2": "Configuración del proyecto de React",
+          "desc2": "Te mostraré cómo configurar un proyecto de React para trabajar con Firebase. Aprenderás a instalar las dependencias necesarias, establecer la conexión con Firebase y configurar las rutas de autenticación en tu aplicación web.",
+          "title3": "Implementación del sistema de inicio de sesión",
+          "desc3": "En esta sección, te guiaré a través de la implementación del sistema de inicio de sesión utilizando React Hook Forms para gestionar los formularios. Te mostraré cómo utilizar las funciones proporcionadas por Firebase para realizar la autenticación y cómo manejar los casos de éxito y error durante el proceso de inicio de sesión."
+        }
       },
       {
+        "id": "3",
         "titulo": "API Rest para Ecommerce",
         "fecha": "30 de enero de 2021",
         "tecnologias": [
@@ -30,49 +58,145 @@
           "JWT",
           "Cookies"
         ],
-        "descripcion": "Aprende cómo crear un sistema de autorización completo y sin dependencias para tu backend de NodeJS utilizando Express."
+        "descripcion": "Aprende cómo crear un sistema de autorización completo y sin dependencias para tu backend de NodeJS utilizando Express.",
+        "content": {
+          "code": "// Dependencies\nnpm install express\nnpm install mongoose\nnpm install jsonwebtoken\nnpm install cookie-parser\nnpm install zod",
+          "resume": "En este artículo, te guiaré a través del proceso de creación de una API Rest para un ecommerce utilizando NodeJS y Express. Aprenderás a implementar un sistema de autorización completo sin depender de bibliotecas externas, utilizando JSON Web Tokens (JWT) y cookies para manejar la autenticación y la autorización en tu aplicación.",
+          "src": "/articles/ecommerce-api.png",
+          "title1": "Introducción a NodeJS y Express",
+          "desc1": "Comenzaremos con una introducción a NodeJS y Express, dos tecnologías populares para el desarrollo de aplicaciones backend. Te mostraré cómo configurar un proyecto de NodeJS con Express y cómo estructurar tu aplicación para manejar las rutas y los controladores necesarios para la API Rest de tu ecommerce.",
+          "title2": "Conexión a la base de datos MongoDB",
+          "desc2": "En esta sección, aprenderás a establecer una conexión con MongoDB, una base de datos NoSQL ampliamente utilizada. Te mostraré cómo instalar y configurar MongoDB en tu entorno local y cómo utilizar la biblioteca de MongoDB para interactuar con la base de datos desde tu aplicación NodeJS.",
+          "title3": "Implementación del sistema de autorización",
+          "desc3": "Aquí es donde implementaremos el sistema de autorización para proteger las rutas de la API Rest. Aprenderás a generar y verificar tokens JWT para autenticar a los usuarios, a manejar cookies para mantener la sesión del usuario y a utilizar el esquema de validación de datos ZOD para asegurarte de que los datos recibidos sean válidos antes de procesarlos."
+        }
       },
       {
+        "id": "4",
         "titulo": "Cómo utilizar PRISMA en el backend con NodeJS",
         "fecha": "12 de abril de 2023",
         "tecnologias": ["NodeJS", "Express", "Prisma", "SqlLite"],
-        "descripcion": "Descubre cómo almacenar correctamente tu JWT en el navegador para evitar agujeros de seguridad en tu aplicación."
+        "descripcion": "Descubre cómo almacenar correctamente tu JWT en el navegador para evitar agujeros de seguridad en tu aplicación.",
+        "content": {
+          "code": "// Dependencies\nnpm install prisma\nnpm install @prisma/client",
+          "resume": "En este artículo aprenderás cómo utilizar PRISMA, una moderna herramienta de base de datos, en el backend de tu aplicación NodeJS. PRISMA simplifica el acceso a la base de datos y proporciona un generador de consultas autogeneradas y seguro en cuanto a tipos, lo que te permite trabajar con bases de datos de manera fluida. Exploraremos cómo integrar PRISMA con NodeJS y Express, y aprovechar sus potentes características para mejorar tu flujo de trabajo de desarrollo en el backend.",
+          "src": "/articles/prisma-backend.png",
+          "title1": "Introducción a PRISMA",
+          "desc1": "Comenzaremos con una introducción a PRISMA y sus beneficios. Aprenderás cómo PRISMA ayuda a abstraer las complejidades de trabajar con bases de datos y cómo mejora la productividad al proporcionar un enfoque declarativo e intuitivo para la gestión de bases de datos.",
+          "title2": "Configuración de PRISMA con NodeJS y Express",
+          "desc2": "En esta sección, te guiaré a través del proceso de configuración de PRISMA en tu proyecto NodeJS y Express. Aprenderás cómo instalar y configurar PRISMA, establecer una conexión con tu base de datos SQLite y definir tus modelos de datos utilizando el lenguaje de definición de esquemas de PRISMA.",
+          "title3": "Realización de operaciones CRUD con PRISMA",
+          "desc3": "Aquí descubrirás cómo aprovechar el generador de consultas de PRISMA para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en tu backend de NodeJS. Te mostraré cómo crear, recuperar, actualizar y eliminar registros de la base de datos SQLite utilizando la sintaxis intuitiva y las potentes características de PRISMA."
+        }
       },
       {
-        "titulo": "Cómo utilizar GraphQL en el backend con NodeJS",
+        "id": "5",
+        "titulo": "Cómo utilizar GraphQL - Apollo en el frontend y backend",
         "fecha": "30 de abril de 2023",
-        "tecnologias": ["NodeJS", "Express", "GraphQL", "MongoDB"],
-        "descripcion": "Descubre cómo almacenar correctamente tu JWT en el navegador para evitar agujeros de seguridad en tu aplicación."
+        "tecnologias": ["NodeJS", "Express", "GraphQL", "Apollo", "MongoDB"],
+        "descripcion": "Descubre cómo almacenar correctamente tu JWT en el navegador para evitar agujeros de seguridad en tu aplicación.",
+        "content": {
+          "code": "// Dependencies\nnpm install graphql apollo-server-express mongoose",
+          "resume": "En este artículo aprenderás cómo utilizar GraphQL y Apollo en el frontend y el backend de tu aplicación. GraphQL es un lenguaje de consulta y manipulación de datos que te permite solicitar de forma eficiente los datos necesarios para tus aplicaciones, y Apollo es un conjunto de herramientas que facilita la implementación de GraphQL en tus proyectos. Exploraremos cómo configurar GraphQL en el frontend y el backend, y cómo utilizar Apollo para interactuar con un servidor GraphQL y una base de datos MongoDB.",
+          "src": "/articles/graphql-apollo.png",
+          "title1": "Introducción a GraphQL y Apollo",
+          "desc1": "Comenzaremos con una introducción a GraphQL y Apollo. Aprenderás cómo GraphQL redefine la forma en que se solicitan y manipulan los datos, y cómo Apollo proporciona una solución completa para trabajar con GraphQL en el frontend y el backend. Exploraremos los beneficios de utilizar GraphQL y Apollo en tus proyectos.",
+          "title2": "Configuración del servidor GraphQL",
+          "desc2": "En esta sección, te guiaré a través del proceso de configuración de un servidor GraphQL utilizando NodeJS y Express. Aprenderás cómo definir los esquemas y resolvers, y cómo implementar consultas y mutaciones en tu servidor GraphQL. También exploraremos cómo integrar Apollo Server para facilitar la implementación y el manejo de solicitudes GraphQL.",
+          "title3": "Interacción con una base de datos MongoDB",
+          "desc3": "Aquí descubrirás cómo utilizar Apollo y GraphQL para interactuar con una base de datos MongoDB. Aprenderás cómo definir los modelos de datos, cómo realizar consultas y mutaciones para leer y escribir datos en la base de datos, y cómo aprovechar las capacidades de Apollo para realizar validaciones y controlar el flujo de datos entre el servidor GraphQL y MongoDB."
+        }
+      },
+      {
+        "id": "6",
+        "titulo": "Comunicación en tiempo real con WebSockets",
+        "fecha": "21 de junio de 2023",
+        "tecnologias": ["NodeJS", "Express", "WebSocket"],
+        "descripcion": "Explora el poder de la comunicación en tiempo real con WebSockets y aprende cómo implementarlo en tus aplicaciones.",
+        "content": {
+          "code": "// Dependencies\nnpm install websocket",
+          "resume": "En este artículo, te sumergirás en el mundo de los WebSockets y descubrirás sus capacidades para la comunicación en tiempo real en aplicaciones web. Los WebSockets proporcionan una conexión persistente entre un cliente y un servidor, lo que permite una comunicación bidireccional eficiente. Exploraremos los fundamentos de los WebSockets y sus ventajas sobre las solicitudes HTTP tradicionales. Además, aprenderemos cómo implementar WebSockets utilizando NodeJS, Express y la API de WebSocket.",
+          "src": "/articles/websockets.png",
+          "title1": "Introducción a los WebSockets",
+          "desc1": "Comenzaremos con una introducción a los WebSockets. Aprenderás sobre su protocolo subyacente, cómo difieren de HTTP tradicional y los beneficios que proporcionan para la comunicación en tiempo real. También exploraremos varios casos de uso en los que los WebSockets destacan.",
+          "title2": "Configuración de un servidor WebSocket",
+          "desc2": "En esta sección, te guiararemos a través del proceso de configuración de un servidor WebSocket utilizando NodeJS y Express. Aprenderás cómo establecer una conexión WebSocket, manejar mensajes entrantes y transmitir mensajes a clientes conectados. También abordaremos temas como la autenticación y consideraciones de seguridad.",
+          "title3": "Implementación de la comunicación WebSocket en una aplicación web",
+          "desc3": "Aquí, exploraremos cómo integrar WebSockets en una aplicación web. Aprenderás cómo establecer una conexión WebSocket desde el lado del cliente, enviar y recibir mensajes, y actualizar la interfaz de usuario en tiempo real. También discutiremos patrones comunes y mejores prácticas para manejar eventos WebSocket y gestionar el ciclo de vida del WebSocket."
+        }
+      },
+      {
+        "id": "7",
+        "titulo": "La importancia de utilizar los principios SOLID en el desarrollo de software",
+        "fecha": "21 de junio de 2023",
+        "tecnologias": ["Programación", "Desarrollo de software"],
+        "descripcion": "Explora los principios SOLID y descubre por qué son fundamentales en el desarrollo de software de calidad.",
+        "content": {
+          "code": "// SOLID\nSingle Responsibility Principle - SRP\nOpen/Closed Principle - OCP\nLiskov Substitution Principle - LSP\nInterface Segregation Principle - ISP\nDependency Inversion Principle - DIP",
+          "resume": "En el mundo del desarrollo de software, los principios SOLID son un conjunto de reglas y directrices que nos ayudan a diseñar y desarrollar sistemas más mantenibles, flexibles y escalables. Creados por el reconocido ingeniero de software Robert C. Martin, estos principios se basan en años de experiencia en la industria y se consideran fundamentales para lograr un código limpio y de alta calidad. En este artículo, exploraremos cada uno de los principios SOLID y discutiremos su importancia en el desarrollo de software moderno.",
+          "src": "/articles/solid-principles.png",
+          "title1": "El significado de SOLID",
+          "desc1": "Comenzaremos explicando brevemente qué significa SOLID y cómo cada letra representa un principio fundamental. Descubriremos qué significa cada principio y cómo se relacionan entre sí para lograr un diseño de software sólido y modular.",
+          "title2": "Ventajas de utilizar los principios SOLID",
+          "desc2": "En esta sección, analizaremos las ventajas y beneficios que proporcionan los principios SOLID en el desarrollo de software. Veremos cómo la aplicación adecuada de estos principios puede mejorar la mantenibilidad del código, facilitar la extensibilidad y reducir el acoplamiento entre componentes.",
+          "title3": "Ejemplos prácticos de aplicación",
+          "desc3": "Para comprender mejor cómo funcionan los principios SOLID en la práctica, presentaremos ejemplos concretos de cómo se pueden aplicar en diferentes situaciones. A través de casos de uso reales, veremos cómo los principios SOLID nos permiten diseñar sistemas más robustos, fáciles de mantener y adaptar a futuros cambios."
+        }
+      },
+      {
+        "id": "8",
+        "titulo": "Implementación de MVC en el backend: organización y beneficios",
+        "fecha": "21 de junio de 2023",
+        "tecnologias": ["Programación", "Desarrollo de software", "Backend"],
+        "descripcion": "Descubre cómo implementar el patrón MVC (Modelo-Vista-Controlador) en el backend y aprovecha sus beneficios en el desarrollo de aplicaciones robustas y escalables.",
+        "content": {
+          "code": "// mkdir \nModel \nView \nController",
+          "resume": "El patrón Modelo-Vista-Controlador (MVC) es ampliamente utilizado en el desarrollo de software para separar la lógica de negocio de la interfaz de usuario. En este artículo, exploraremos cómo aplicar el patrón MVC en el backend de una aplicación, centrándonos en su organización y los beneficios que aporta. Desde la separación de responsabilidades hasta la escalabilidad y mantenibilidad, veremos cómo el uso de MVC puede mejorar significativamente el desarrollo de software backend.",
+          "src": "/articles/mvc-backend.png",
+          "title1": "Introducción al patrón MVC",
+          "desc1": "Comenzaremos explicando en qué consiste el patrón Modelo-Vista-Controlador y cómo se aplica en el desarrollo de software. Aprenderás sobre los roles principales del modelo, la vista y el controlador, y cómo interactúan entre sí para lograr una arquitectura bien estructurada.",
+          "title2": "Organización del backend con MVC",
+          "desc2": "En esta sección, nos adentraremos en la implementación práctica de MVC en el backend. Exploraremos cómo organizar los componentes del backend, como los modelos, las vistas y los controladores, para lograr una separación clara de responsabilidades y promover la reutilización de código.",
+          "title3": "Beneficios de utilizar MVC en el backend",
+          "desc3": "Analizaremos los beneficios que se obtienen al implementar el patrón MVC en el backend. Desde la modularidad y la flexibilidad hasta la facilidad de mantenimiento y la escalabilidad, verás cómo MVC puede mejorar la calidad y eficiencia del desarrollo de aplicaciones backend."
+        }
       }
     ],
     "projects": [
       {
         "titulo": "Aplicación de Tareas",
-        "descripcion": "Sitio web de tareas realizado con MERN Stack"
+        "descripcion": "Mern Stack MONOREPO with - GraphQL, Apollo, MongoDB, NodeJS, Eslint, TypeScript, ReactJs, TailwindCSS, DaisyUI, Turbo Repo",
+        "src": "https://task-app-swart.vercel.app/"
       },
       {
         "titulo": "Will Blogs",
-        "descripcion": "Mi sitio web personal que muestra mis proyectos y publicaciones de blog. Construido con NextJS, ChakraUI, MDX y alojado en Vercel."
+        "descripcion": "Mi sitio web personal que muestra mis proyectos y publicaciones de blog. Construido con NextJS 13, TailwindCSS, ClientComponents, I18N with INTL, alojado en Vercel.",
+        "src": "https://will-blog-iota.vercel.app/"
       },
       {
-        "titulo": "CRUD de Videos",
-        "descripcion": "Sitio web para cargar, eliminar, actualizar y editar videos"
+        "titulo": "Login COMPLETE + OTP",
+        "descripcion": "Mern Stack with - Firebase, Auth Social Networks, ReactJS, TailwindCSS, MaterialTailwindCSS, Eslint",
+        "src": "https://login-firebase-otp.vercel.app/"
       },
       {
-        "titulo": "Ecommerce",
-        "descripcion": "Creando productos de comercio electrónico para tus productos"
+        "titulo": "Ecommerce - Cart",
+        "descripcion": "Carrito de compras para ecommerce, búsqueda por voz, filtracion de productos, funcionalidad CRUD para gestionar los productos en el carrito, Detalles de la orden. El objetivo fue mejorar la experiencia de compra y agilizar la gestión de productos.",
+        "src": "https://carrito-xi.vercel.app/"
       },
       {
         "titulo": "Clon de TikTok",
-        "descripcion": "Clonando una de las grandes plataformas de videos cortos en Internet"
+        "descripcion": "Clonando una de las grandes plataformas de videos cortos en Internet",
+        "src": "https://carrito-xi.vercel.app/"
       },
       {
         "titulo": "Página de Aterrizaje",
-        "descripcion": "Página de inicio del sitio web cargando contenido"
+        "descripcion": "Página de inicio del sitio web cargando contenido",
+        "src": "https://carrito-xi.vercel.app/"
       },
       {
         "titulo": "Noticias",
-        "descripcion": "Sitio web para ver noticias nuevas"
+        "descripcion": "Sitio web para ver noticias nuevas",
+        "src": "https://carrito-xi.vercel.app/"
       }
     ]
   }

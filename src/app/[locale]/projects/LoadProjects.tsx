@@ -18,6 +18,7 @@ import ProjectsSkeleton from '@/components/skeleton/ProjectsSkeleton';
 interface ProjectsProps {
   titulo: string;
   descripcion: string;
+  src: string;
 }
 
 function LoadProjects() {
@@ -25,7 +26,24 @@ function LoadProjects() {
   const apiES = blogsApiES.blogs.projects;
   const apiEN = blogsApi.blogs.projects;
   const { locale } = useI18n();
-  console.log(locale);
+
+  /**pagination */
+  const projectsPerPage = 4;
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const indexOfLastProject = (currentPage + 1) * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = projects.slice(
+    indexOfFirstProject,
+    indexOfLastProject
+  );
+  console.log(currentProjects);
+
+  const totalPages = Math.ceil(projects.length / projectsPerPage);
+  console.log(totalPages);
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
 
   useEffect(() => {
     if (locale === 'en') {
@@ -40,23 +58,26 @@ function LoadProjects() {
 
   return (
     <div className='flex flex-wrap items-center justify-center gap-5 my-5'>
-      {projects.length === 0
-        ? Array.from(new Array(4)).map((_, index) => (
-            <ProjectsSkeleton key={index} small bordered shadow>
-              <h1 className='bg-neutral-300 h-[1.7rem] rounded-md' />
-              <p className='bg-neutral-300 h-[4.5rem] rounded-md'>
-                <span className='loading loading-spinner text-error'></span>
-              </p>
-            </ProjectsSkeleton>
-          ))
-        : projects.map((project, index) => (
+      {projects.length === 0 ? (
+        Array.from(new Array(4)).map((_, index) => (
+          <ProjectsSkeleton key={index} small bordered shadow>
+            <h1 className='bg-neutral-300 h-[1.7rem] rounded-md' />
+            <p className='bg-neutral-300 h-[4.5rem] rounded-md'>
+              <span className='loading loading-spinner text-error'></span>
+            </p>
+          </ProjectsSkeleton>
+        ))
+      ) : (
+        <>
+          {currentProjects.map((project, index) => (
             <Card
               key={index}
+              href={project.src}
               title={<Title title={project.titulo} iconEnd={AiFillGithub} />}
               body={
                 <p
                   className='
-            text-justify line-clamp-3 leading-5 h-[4rem]'>
+          text-justify line-clamp-3 leading-5 h-[4rem]'>
                   {project.descripcion}
                 </p>
               }
@@ -65,6 +86,30 @@ function LoadProjects() {
               small
             />
           ))}
+          <div className='w-full flex justify-center'>
+            <div className='menu menu-horizontal border-[1px]'>
+              {Array.from({ length: totalPages }, (_, index) => (
+                <li
+                  key={index}
+                  onClick={() => handlePageChange(index)}
+                  className={`btn btn-ghost ${
+                    index === currentPage ? 'btn-active' : ''
+                  }`}>
+                  {index + 1}
+                </li>
+              ))}
+            </div>
+          </div>
+          {/* <div className='menu menu-horizontal'>
+            <li>
+              <a href=''>sd</a>
+            </li>
+            <li>
+              <a href=''>sd</a>
+            </li>
+          </div> */}
+        </>
+      )}
     </div>
   );
 }

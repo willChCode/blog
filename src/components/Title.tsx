@@ -30,7 +30,7 @@ function Title({
         <h1
           className={`
         font-bold
-        ${textBig ? 'text-2xl' : textSmall ? 'text-sm' : 'text-xl'}`}>
+        ${textBig ? 'text-3xl' : textSmall ? 'text-sm' : 'text-xl'}`}>
           {title}
         </h1>
         {IconEnd && <IconEnd size={iconBig ? 40 : iconSmall ? 20 : 30} />}
