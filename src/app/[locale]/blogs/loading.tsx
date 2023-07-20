@@ -4,7 +4,7 @@ import Pepe from '@/components/Pepe';
 function loading() {
   return (
     <Container>
-      <div className='w-full h-[30vh] flex flex-col justify-center items-center'>
+      <div className='w-full h-[70vh] flex flex-col justify-center items-center'>
         <Pepe />
         <p className='italic font-semibold text-sm'>CARGANDO.....</p>
       </div>
