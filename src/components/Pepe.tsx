@@ -14,7 +14,7 @@ function Pepe() {
       controls={true}
       src='/gifs/rana-pepe.json'
       style={{ height: '100px', width: '100px' }}
-    />
+      />
   );
 }
 
